@@ -1,0 +1,180 @@
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: 58px 1fr 100px;
+}
+
+#logo{
+	height: 50px;
+	font-size: 0;
+}
+
+.categoria{
+	filter: brightness(100%);
+}
+
+.obs{
+	filter: brightness(40%);
+}
+
+#ofertas {
+	margin-top: 3em;
+	position: relative;
+}
+#ofertas img,#ofertas source{
+	width: 100%;
+}
+
+.oferta-titulos {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Alineación horizontal del texto */
+}
+
+.subtitulo{
+	font-family: 'Elianto-Regular', sans-serif;
+}
+
+.subtitulo span{
+	color: #D17A35;
+}
+
+.subtitulo-white{
+	font-family: 'Elianto-Regular', sans-serif;
+}
+
+.subtitulo-white span{
+	color: #ffffff;
+}
+
+.oferta-titulos span{
+	color: #D17A35;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.truncate {
+	max-width: 200px; /* Ancho máximo de la celda */
+	white-space: nowrap; /* Evitar el salto de línea */
+	overflow: hidden; /* Ocultar el contenido excedente */
+	text-overflow: ellipsis; /* Mostrar puntos suspensivos */
+  }
+
+.jumbotron {
+	width: 100%;
+	background-color: #D17A35;
+	text-align: center; 
+}
+
+.card-title{
+	font-size: 1.5em;
+}
+  
+.form-foros{
+	border: 1px solid #ccc;
+	padding: 2%;
+	background-color: #D17A35;
+	border-radius: 15px;
+	width: 80%;
+	margin: auto;
+
+}
+
+.banner{
+	text-align: center; 
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lead{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.elianto{
+	font-family: 'Elianto-Regular', sans-serif;
+	/* font-size: 0.8em; */
+}
+
+@font-face {
+	font-family: 'Elianto-Regular';
+	src: url('../../public/fonts/Elianto-Regular.otf') format('opentype');
+  }
+  
+  .oferta-titulos h3 {
+	font-family: 'Elianto-Regular', sans-serif;
+	color: white;
+  }
+.bg-dark{
+	background-color: black!important;
+}
+
+.imgTabla {
+    max-height:40px;
+    max-width:40px;
+    height:auto;
+    width:auto;
+}
+
+.imgCargada {
+		max-height:100px;
+		max-width:100px;
+		height:auto;
+		width:auto;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #D17A35;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+	font-size: 2em;
+}
+
+#navbar{
+	z-index: 1;
+}
+
+
+
+@media only screen and (max-width: 1690px) {
+	.oferta-titulos h3 {
+		font-size: 1.3em;
+	  }
+  }
+
+  @media only screen and (max-width: 1279px) {
+	.oferta-titulos h3 {
+		font-size: 1.2em;
+	  }
+  }
+  
+@media only screen and (max-width: 1199px) {
+	.oferta-titulos h3 {
+		font-size: 2em;
+	  }
+  }
+
+
+@media only screen and (max-width: 990px) {
+	.oferta-titulos h3 {
+		font-size: 2.5em;
+	  }
+  }
+
+  
+
